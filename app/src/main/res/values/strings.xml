@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">User Interface Features</string>
+
+    <!--  Constraint Layout  -->
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="type">Type Here</string>
+    <string name="sample_text_view">Sample Text View</string>
+    <string name="button">Button</string>
+
+    <!--  Relative Layout  -->
+    <string name="relative_layout">Relative Layout</string>
+    <string name="light">Light</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="night_mode_off">Night Mode OFF</string>
+    <string name="night_mode_on">Night Mode ON</string>
+
+    <!--  Grid Layout  -->
+    <string name="grid_layout">Grid Layout</string>
+    <string name="radio">Radio</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="movie">Movie</string>
+    <string name="games">Games</string>
+    <string name="cartoon">Cartoon</string>
+    <string name="next">NEXT</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity2">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTextContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="40sp">
+
+        <TextView
+            android:id="@+id/relativeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/relative_layout"
+            android:textAlignment="center"
+            android:textColor="#03633D"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayoutTextContainer"
+        android:layout_marginHorizontal="40sp"
+        android:layout_marginTop="50sp">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/mySwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/light"
+            android:textSize="35sp" />
+
+        <ImageView
+            android:id="@+id/mySwitchImage"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@null"
+            android:src="@drawable/light_off" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeSwitch"
+        android:layout_marginHorizontal="40sp"
+        android:layout_marginTop="50sp">
+
+        <ToggleButton
+            android:id="@+id/myToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:forceHasOverlappingRendering="false"
+            android:text="@string/night_mode"
+            android:textOff="@string/night_mode_off"
+            android:textOn="@string/night_mode_on" />
+
+        <ImageView
+            android:id="@+id/myToggleImage"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@null"
+            android:src="@drawable/day" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/myImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeToggle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:contentDescription="@null"
+        android:src="@drawable/click" />
+
+</RelativeLayout>
